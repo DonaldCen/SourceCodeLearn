@@ -32,9 +32,36 @@ public class ReverseList {
         ListNode node2 = new ListNode(2,node3);
         ListNode node1 = new ListNode(1,node2);
 
-        ListNode recursion = recursion(node1);
-        System.out.println(recursion);
+        /*ListNode recursion = recursion(node1);
+        System.out.println(recursion);*/
 
+        /*ListNode r1 = r1(node1);
+        System.out.println(r1);*/
+
+        ListNode r2 = r2(node1);
+        System.out.println(r2);
+    }
+
+    public static ListNode r1(ListNode head){
+        ListNode pre = null,next = null;
+        ListNode cur = head;
+        while (cur != null){
+            next = cur.next;
+            cur.next = pre;
+            pre = cur;
+            cur = next;
+        }
+        return pre;
+    }
+
+    public static ListNode r2(ListNode head){
+        if(head == null || head.next == null){
+            return head;
+        }
+        ListNode listNode = r2(head.next);
+        head.next.next = head;
+        head.next = null;
+        return listNode;
     }
 
     /**
