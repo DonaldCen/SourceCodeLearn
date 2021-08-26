@@ -8,10 +8,11 @@ import org.springframework.stereotype.Service;
  * @Date: 2021/7/26 20:02
  * @Desc: UserServiceImpl
  */
-@Service
+
 public class UserServiceImpl implements UserService {
 
     public String hello(String a, String b) {
+        System.out.println("hello 鸭~");
         return a +","+ b;
     }
 }
