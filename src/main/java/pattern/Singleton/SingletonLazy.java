@@ -1,4 +1,4 @@
-package pattern;
+package pattern.Singleton;
 
 /**
  * @Author: DonaldCen
