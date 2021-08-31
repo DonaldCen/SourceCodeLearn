@@ -10,6 +10,7 @@ import org.springframework.stereotype.Component;
  * @Date: 2021/8/23 15:58
  * @Desc:
  */
+@Component
 public class TestAware implements BeanFactoryAware {
 
     private BeanFactory beanFactory;
