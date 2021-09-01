@@ -1,6 +1,7 @@
 package com.learn.donald.algorithm.sort;
 
 import com.learn.donald.algorithm.sort.bubble.BubbleSort;
+import com.learn.donald.algorithm.sort.insert.InsertSort;
 import com.learn.donald.algorithm.sort.select.SelectSort;
 
 import java.text.SimpleDateFormat;
@@ -20,12 +21,15 @@ public class SortMain {
 
     public static void main(String[] args) {
         System.out.println("开始时间：" + dateFormat.format(new Date()));
-        // 冒泡排序 80000 条 13s，时间复杂度O(n^2)
+        // 冒泡排序 80000 条 13s，最坏时间复杂度为O(n2). 算法的平均时间复杂度为O(n2) .冒泡排序最好的时间复杂度为O(n).
 //        BubbleSort.sort(moreArray);
 
-        // 选择排序 80000 条 5s,时间复杂度O(n^2)
-        SelectSort.sort(lessArray);
-        System.out.println(Arrays.toString(lessArray));
+        // 选择排序 80000 条 5s,时间复杂度O(n^2)  时间复杂度最好和最坏都是O(N2)
+//        SelectSort.sort(lessArray);
+
+        //插入排序 80000 条 1s，时间复杂度O(n^2) 时间复杂度最好的情况是O(N),最差的情况是O(N2)
+        InsertSort.sort(moreArray);
+//        System.out.println(Arrays.toString(lessArray));
         System.out.println("结束时间：" + dateFormat.format(new Date()));
     }
 
