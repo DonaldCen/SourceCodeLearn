@@ -3,6 +3,7 @@ package com.learn.donald.algorithm.sort;
 import com.learn.donald.algorithm.sort.bubble.BubbleSort;
 import com.learn.donald.algorithm.sort.insert.InsertSort;
 import com.learn.donald.algorithm.sort.select.SelectSort;
+import com.learn.donald.algorithm.sort.shell.ShellSort;
 
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
@@ -14,7 +15,7 @@ import java.util.Date;
  * @Desc: 排序算法测试
  */
 public class SortMain {
-    private static final int MAX = 80000;
+    private static final int MAX = 8000000;
     private static final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
     private static final int[] lessArray = getLessArray();
     private static final int[] moreArray = getMoreArray();
@@ -28,7 +29,10 @@ public class SortMain {
 //        SelectSort.sort(lessArray);
 
         //插入排序 80000 条 1s，时间复杂度O(n^2) 时间复杂度最好的情况是O(N),最差的情况是O(N2)
-        InsertSort.sort(moreArray);
+//        InsertSort.sort(moreArray);
+
+        //希尔排序 8000000 条 2s
+        ShellSort.sort(moreArray);
 //        System.out.println(Arrays.toString(lessArray));
         System.out.println("结束时间：" + dateFormat.format(new Date()));
     }
