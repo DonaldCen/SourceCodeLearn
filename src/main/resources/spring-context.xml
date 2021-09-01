@@ -5,10 +5,10 @@
        http://www.springframework.org/schema/beans/spring-beans.xsd
        ">
 
-    <bean id="aa" class="cn.donald.service.impl.UserServiceImpl">
+    <bean id="aa" class="com.learn.donald.service.impl.UserServiceImpl">
 
     </bean>
-    <bean id="testAware" class="cn.donald.aware.TestAware">
+    <bean id="testAware" class="com.learn.donald.aware.TestAware">
 
     </bean>
 </beans>
