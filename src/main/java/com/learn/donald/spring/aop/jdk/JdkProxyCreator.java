@@ -1,6 +1,6 @@
-package com.learn.donald.aop.jdk;
+package com.learn.donald.spring.aop.jdk;
 
-import com.learn.donald.aop.ProxyCreator;
+import com.learn.donald.spring.aop.ProxyCreator;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

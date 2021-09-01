@@ -1,8 +1,8 @@
-package com.learn.donald.aop;
+package com.learn.donald.spring.aop;
 
-import com.learn.donald.aop.jdk.JdkProxyCreator;
-import com.learn.donald.service.UserService;
-import com.learn.donald.service.impl.UserServiceImpl;
+import com.learn.donald.spring.aop.jdk.JdkProxyCreator;
+import com.learn.donald.other.service.UserService;
+import com.learn.donald.other.service.impl.UserServiceImpl;
 
 /**
  * @Author: DonaldCen

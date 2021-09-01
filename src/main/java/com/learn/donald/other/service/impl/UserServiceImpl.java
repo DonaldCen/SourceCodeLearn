@@ -1,6 +1,6 @@
-package com.learn.donald.service.impl;
+package com.learn.donald.other.service.impl;
 
-import com.learn.donald.service.UserService;
+import com.learn.donald.other.service.UserService;
 import org.springframework.stereotype.Component;
 
 /**

@@ -1,4 +1,4 @@
-package com.learn.donald.aop.cglib;
+package com.learn.donald.spring.aop.cglib;
 
 
 import org.springframework.cglib.proxy.MethodInterceptor;

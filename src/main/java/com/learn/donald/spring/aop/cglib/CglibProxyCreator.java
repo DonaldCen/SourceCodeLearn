@@ -1,6 +1,6 @@
-package com.learn.donald.aop.cglib;
+package com.learn.donald.spring.aop.cglib;
 
-import com.learn.donald.aop.ProxyCreator;
+import com.learn.donald.spring.aop.ProxyCreator;
 import org.springframework.cglib.proxy.Enhancer;
 import org.springframework.cglib.proxy.MethodInterceptor;
 

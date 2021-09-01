@@ -1,4 +1,4 @@
-package com.learn.donald.factorybean;
+package com.learn.donald.spring.factorybean;
 
 import org.springframework.context.annotation.ComponentScan;
 

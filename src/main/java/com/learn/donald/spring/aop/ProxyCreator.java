@@ -1,4 +1,4 @@
-package com.learn.donald.aop;
+package com.learn.donald.spring.aop;
 
 /**
  * @Author: DonaldCen

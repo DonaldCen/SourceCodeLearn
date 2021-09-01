@@ -1,6 +1,6 @@
 package com.learn.donald;
 
-import com.learn.donald.aware.TestAware;
+import com.learn.donald.spring.aware.TestAware;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Component;

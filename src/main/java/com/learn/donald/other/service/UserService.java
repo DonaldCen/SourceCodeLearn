@@ -1,4 +1,4 @@
-package com.learn.donald.service;
+package com.learn.donald.other.service;
 
 /**
  * @Author: DonaldCen

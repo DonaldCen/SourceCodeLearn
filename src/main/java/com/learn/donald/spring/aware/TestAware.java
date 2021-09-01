@@ -1,4 +1,4 @@
-package com.learn.donald.aware;
+package com.learn.donald.spring.aware;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.BeanFactory;

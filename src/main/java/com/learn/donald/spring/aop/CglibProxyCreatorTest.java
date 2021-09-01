@@ -1,8 +1,8 @@
-package com.learn.donald.aop;
+package com.learn.donald.spring.aop;
 
-import com.learn.donald.aop.cglib.CglibProxyCreator;
-import com.learn.donald.aop.cglib.Tank59;
-import com.learn.donald.aop.cglib.TankInterceptor;
+import com.learn.donald.spring.aop.cglib.CglibProxyCreator;
+import com.learn.donald.spring.aop.cglib.Tank59;
+import com.learn.donald.spring.aop.cglib.TankInterceptor;
 
 /**
  * @Author: DonaldCen

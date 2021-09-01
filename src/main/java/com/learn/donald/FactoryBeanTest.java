@@ -1,7 +1,7 @@
 package com.learn.donald;
 
-import com.learn.donald.factorybean.ScanConfig;
-import com.learn.donald.factorybean.TestEntity;
+import com.learn.donald.spring.factorybean.ScanConfig;
+import com.learn.donald.spring.factorybean.TestEntity;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**

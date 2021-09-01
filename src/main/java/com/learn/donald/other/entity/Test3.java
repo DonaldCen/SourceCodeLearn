@@ -1,4 +1,4 @@
-package com.learn.donald.entity;
+package com.learn.donald.other.entity;
 
 /**
  * @Author: DonaldCen
