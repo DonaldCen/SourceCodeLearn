@@ -1,8 +1,10 @@
 package com.learn.donald.algorithm.sort;
 
 import com.learn.donald.algorithm.sort.bubble.BubbleSort;
+import com.learn.donald.algorithm.sort.select.SelectSort;
 
 import java.text.SimpleDateFormat;
+import java.util.Arrays;
 import java.util.Date;
 
 /**
@@ -19,7 +21,11 @@ public class SortMain {
     public static void main(String[] args) {
         System.out.println("开始时间：" + dateFormat.format(new Date()));
         // 冒泡排序 80000 条 13s，时间复杂度O(n^2)
-        BubbleSort.sort(moreArray);
+//        BubbleSort.sort(moreArray);
+
+        // 选择排序 80000 条 5s,时间复杂度O(n^2)
+        SelectSort.sort(lessArray);
+        System.out.println(Arrays.toString(lessArray));
         System.out.println("结束时间：" + dateFormat.format(new Date()));
     }
 
