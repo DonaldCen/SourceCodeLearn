@@ -2,6 +2,7 @@ package com.learn.donald.algorithm.sort;
 
 import com.learn.donald.algorithm.sort.bubble.BubbleSort;
 import com.learn.donald.algorithm.sort.insert.InsertSort;
+import com.learn.donald.algorithm.sort.radix.RadixSort;
 import com.learn.donald.algorithm.sort.select.SelectSort;
 import com.learn.donald.algorithm.sort.shell.ShellSort;
 
@@ -15,7 +16,7 @@ import java.util.Date;
  * @Desc: 排序算法测试
  */
 public class SortMain {
-    private static final int MAX = 8000000;
+    private static final int MAX = 60000000;
     private static final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
     private static final int[] lessArray = getLessArray();
     private static final int[] moreArray = getMoreArray();
@@ -32,13 +33,17 @@ public class SortMain {
 //        InsertSort.sort(moreArray);
 
         //希尔排序 8000000 条 2s
-        ShellSort.sort(moreArray);
-//        System.out.println(Arrays.toString(lessArray));
+//        ShellSort.sort(moreArray);
+
+
+        //基数排序 6千万数据，6s
+        RadixSort.sort(lessArray);
+        System.out.println(Arrays.toString(lessArray));
         System.out.println("结束时间：" + dateFormat.format(new Date()));
     }
 
     private static int[] getLessArray() {
-        return new int[]{11, 5, 9, 8, 33, 88, 1, -1, -99, -88};
+        return new int[]{11, 5, 9, 8, 33, 88, 1, -1, -99, -88,-19999};
     }
 
     private static int[] getMoreArray() {
