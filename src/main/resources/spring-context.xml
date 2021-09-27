@@ -11,4 +11,6 @@
     <bean id="testAware" class="com.learn.donald.spring.aware.TestAware">
 
     </bean>
+
+
 </beans>
