@@ -1,5 +1,6 @@
 package com.learn.donald.lock;
 
+import com.learn.donald.lock.clh.ClhLock;
 import com.learn.donald.utils.IncrementData;
 import com.learn.donald.utils.Print;
 
@@ -21,7 +22,7 @@ public class ReentrantLockTest {
 
     public static void main(String[] args) {
         ExecutorService pool = Executors.newFixedThreadPool(THREADS);
-        Lock lock = new ReentrantLock();
+        Lock lock = new ClhLock();
         CountDownLatch countDownLatch = new CountDownLatch(THREADS);
         long start = System.currentTimeMillis();
         for (int i = 0; i < THREADS; i++) {
