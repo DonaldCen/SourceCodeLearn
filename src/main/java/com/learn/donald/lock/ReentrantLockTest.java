@@ -22,7 +22,7 @@ public class ReentrantLockTest {
 
     public static void main(String[] args) {
         ExecutorService pool = Executors.newFixedThreadPool(THREADS);
-        Lock lock = new ClhLock();
+        Lock lock = new SimpleLock();
         CountDownLatch countDownLatch = new CountDownLatch(THREADS);
         long start = System.currentTimeMillis();
         for (int i = 0; i < THREADS; i++) {
