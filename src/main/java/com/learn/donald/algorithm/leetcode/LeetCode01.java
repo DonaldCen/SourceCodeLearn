@@ -1,5 +1,7 @@
 package com.learn.donald.algorithm.leetcode;
 
+import com.learn.donald.algorithm.LinkList.ListNode;
+
 /**
  * @Author: DonaldCen
  * @Date: 2021/8/10 15:00
@@ -8,23 +10,6 @@ package com.learn.donald.algorithm.leetcode;
  * 输出 5->4->3->2->1
  */
 public class LeetCode01 {
-
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-    }
 
     public static void main(String[] args) {
         ListNode node5 = new ListNode(5, null);

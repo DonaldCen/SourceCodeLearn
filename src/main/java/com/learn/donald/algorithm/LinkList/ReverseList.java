@@ -7,24 +7,6 @@ package com.learn.donald.algorithm.LinkList;
  * @Version 1.0.0
  */
 public class ReverseList {
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-    }
-
-
     public static void main(String[] args) {
         ListNode node5 = new ListNode(5,null);
         ListNode node4 = new ListNode(4,node5);
@@ -55,6 +37,7 @@ public class ReverseList {
     }
 
     public static ListNode r2(ListNode head){
+        System.out.println(head.val);
         if(head == null || head.next == null){
             return head;
         }
