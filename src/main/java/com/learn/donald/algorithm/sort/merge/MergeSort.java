@@ -12,13 +12,20 @@ public class MergeSort {
         mergeSort(arr, 0, arr.length - 1, temp);
     }
 
+    /**
+     * 如果要排序一个数组，我们先把数组从中间分成前后两部分，
+     * 然后对前后两部分分别排序，再将排好序的两部分合并在一起，这样整个数组就都有序了。
+     */
     private static void mergeSort(int[] arr, int start, int end, int[] temp) {
         if (start >= end) {
             return;
         }
         int mid = (start + end) / 2;
+        //先归左边
         mergeSort(arr, start, mid, temp);
+        //接着归右边
         mergeSort(arr, mid + 1, end, temp);
+        //合并
         merge(arr, start, mid, end, temp);
     }
 

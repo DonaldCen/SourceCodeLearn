@@ -3,6 +3,7 @@ package com.learn.donald.algorithm.sort;
 import com.learn.donald.algorithm.sort.bubble.BubbleSort;
 import com.learn.donald.algorithm.sort.insert.InsertSort;
 import com.learn.donald.algorithm.sort.merge.MergeSort;
+import com.learn.donald.algorithm.sort.quick.QuickSort;
 import com.learn.donald.algorithm.sort.radix.RadixSort;
 import com.learn.donald.algorithm.sort.select.SelectSort;
 import com.learn.donald.algorithm.sort.shell.ShellSort;
@@ -36,7 +37,7 @@ public class SortMain {
         //希尔排序 8000000 条 2s
 //        ShellSort.sort(moreArray);
 
-        MergeSort.sort(lessArray);
+        QuickSort.sort(lessArray);
 //        System.out.println(Arrays.toString(lessArray));
         System.out.println("结束时间：" + dateFormat.format(new Date()));
 
